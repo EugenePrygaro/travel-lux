@@ -1,0 +1,109 @@
+
+
+/* Стилі тільки для сторінки реєстрації */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: url("../styles/images/auth_back.png") no-repeat center center;
+    background-size: 100% 100%;
+    /* Відступ для navbar */
+    padding-top: 5rem;
+}
+
+/* Скидання стилів */
+.register-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Контейнер реєстрації */
+.register-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+/* Логотип */
+.register-page .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d63031;
+    margin-bottom: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Підзаголовок */
+.register-page .subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Форма */
+.register-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Поля вводу */
+.register-page input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.register-page input:focus {
+    border-color: #d63031;
+}
+
+/* Кнопка реєстрації */
+.register-page .register-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #d63031;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.register-page .register-button:hover {
+    background: #ff7675;
+}
+
+/* Текст про правила */
+.register-page .terms {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register-page .terms a {
+    color: #d63031;
+    text-decoration: none;
+}
+
+.register-page .terms a:hover {
+    text-decoration: underline;
+}

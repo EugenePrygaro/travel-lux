@@ -1,0 +1,92 @@
+
+/* Контейнер для всіх турів */
+.tours-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  
+  /* Сітка 2x2 */
+  .tours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 25px;
+    width: 70%;
+   
+  }
+  
+  /* Стиль картки туру */
+  .tour-card {
+    position: relative;
+    width: 100%;
+    height: 350px; 
+    border-radius: 25px;
+    overflow: hidden; 
+    cursor: pointer;
+  }
+  
+  /* Зображення, яке займає весь блок */
+  .tour-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  /* Інформаційний блок */
+  .tour-info {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 
+        -1.5px -1.5px 0 black,  
+        1.5px -1.5px 0 black,
+        -1.5px  1.5px 0 black,
+        1.5px  1.5px 0 black; 
+  }
+  
+  /* Ціна */
+  .tour-price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Назва туру */
+  .tour-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  /* Опис туру */
+  .tour-description {
+    font-size: 19px;
+    max-width: 95%;
+    font-weight: 500;
+  }
+  
+  /* Кнопка переходу */
+  .tour-button {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    background: #EA4246;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 110px;
+    border-radius: 60%;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .tour-button:hover {
+    background: darkred;
+  }
+  

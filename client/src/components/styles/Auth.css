@@ -1,0 +1,90 @@
+
+
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../styles/images/auth_back.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.auth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+    margin-top: 6rem; 
+}
+.auth-container {
+    width: 360px;
+    height: 451px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Заголовок */
+.auth-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d01b1b;
+    margin-bottom: 5px;
+}
+
+/* Підзаголовок */
+.auth-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Поля вводу */
+.auth-input {
+    width: 85%;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Кнопка входу */
+.auth-button {
+    width: 85%;
+    height: 55px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #c53030;
+}
+
+/* посилання на регістрацію */
+.auth-register {
+    font-size: 16px;
+    color: red;
+    margin-top: 15px;
+    cursor: pointer;
+}
