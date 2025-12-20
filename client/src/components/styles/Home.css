@@ -1,10 +1,10 @@
 .home-container {
-  padding: 0 85px;
+  padding: 0 50px;
   font-family: var(--font-family);
 }
 
 .home-hero-container {
-  padding: 300px 0;
+  padding: 300px 20px;
 }
 
 .home-hero-section {
@@ -126,7 +126,7 @@
 }
 
 .home-exp-block {
-  width: 308px;
+  width: 100%;
   height: 225px;
   background: #212A3C;
   padding: 40px 15px 28px 35px;
@@ -148,7 +148,7 @@
 
 .home-exp-block-header {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 110%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -169,6 +169,11 @@
 }
 
 @media (min-width: 768px) {
+
+  .home-container {
+      padding: 0 85px;
+    }
+
   .home-hero-container {
     padding: 0;
   }

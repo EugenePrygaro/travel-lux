@@ -6,7 +6,7 @@ import burger_icon from './styles/images/icons/burger-icon.svg';
 import close_icon from './styles/images/icons/close-icon.svg';
 
 
-function NavBar({ className, extraContent }) {
+function NavBar() {
   const isAuthenticated = !!localStorage.getItem("userId"); // Перевіряємо, чи є userId у localStorage
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -21,11 +21,13 @@ function NavBar({ className, extraContent }) {
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <Link to="/loyalty" className="nav-link nav-loyalty">Loyalty Club</Link>
           <Link to="/tours" className="nav-link nav-tour">Tours</Link>
-          <Link to="/about" className="nav-link nav-about">About us</Link>
           {isAuthenticated ? (
             <Link to="/cab" className="nav-link nav-cab">My profile</Link>
           ) : (
-            <Link to="/auth" className="nav-link nav-auth">Login</Link>
+            <>
+              <Link to="/auth" className="nav-link nav-auth">Log in</Link>
+              <Link to="/register" className="nav-button nav-reg">Sign up</Link>
+            </>
           )}
         </div>
       </div>

@@ -14,12 +14,10 @@
     font-family: var(--font-family);
 }
 .navbar-container .logo{
-    
     font-weight: 700;
     font-size: 27px;
     line-height: 110%;
     letter-spacing: -0.02em;
-    text-transform: capitalize;
     text-align: center;
     color: #dd2b2b;
 
@@ -40,7 +38,7 @@
     padding: 80px 30px 180px 30px;
     transition: right 0.4s ease;
     backdrop-filter: blur(10px);
-    gap: 20px;
+    gap: 26px;
     text-align: center;
 }
 
@@ -50,9 +48,8 @@
 
 .navbar-links .nav-link{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 145%;
-    text-transform: capitalize;
     text-align: center;
     color: #fff;
     transition: opacity 450ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -103,6 +100,26 @@
     transform: scale(1.15);
 }
 
+.nav-reg {
+    padding: 5px 10px;
+    background-color: #dd2b2b;
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 145%;
+    text-align: center;
+    color: #fff;
+
+    transition: background-color 250ms ease;
+}
+
+.nav-reg:hover,
+.nav-reg:focus,
+.nav-reg:active {
+    background-color: #991d1d;
+}
+
 @media (min-width: 768px) {
     .navbar-burger-menu {
         display: none;
@@ -118,7 +135,7 @@
         backdrop-filter: none;
         gap: 40px;
     }
-    .navbar-links .nav-link{
-        font-size: 22px;
+    .navbar-links .nav-link, .nav-reg{
+        font-size: 20px;
     }
 }
