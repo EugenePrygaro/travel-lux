@@ -7,6 +7,23 @@
   padding: 300px 20px;
 }
 
+.home-exp-section,
+.home-about-section,
+.home-contacts-section {
+  background: #151b26;
+  padding: 70px 0;
+}
+
+.hero-button-viev-tours:hover,
+.hero-button-viev-tours:focus,
+.about-contact-btn:hover,
+.about-contact-btn:focus,
+.input-field-button:hover,
+.input-field-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* HERO SECTION */
 
 .home-hero-section {
@@ -32,7 +49,7 @@
 
 .home-hero-header {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 110%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -83,13 +100,6 @@
   animation: fadeInUp 0.8s ease forwards;
 }
 
-.hero-button-viev-tours:hover,
-.hero-button-viev-tours:focus,
-.about-contact-btn:hover,
-.about-contact-btn:focus {
-  transform: translateY(-2px);
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-}
 
 .hero-button-viev-tours:active {
   transform: translateY(0);
@@ -109,11 +119,6 @@
 
 /* EXP SECTION */
 
-.home-exp-section,
-.home-about-section {
-  background: #151b26;
-  padding: 85px 0;
-}
 
 .home-exp-header {
   font-weight: 700;
@@ -180,7 +185,7 @@
 .about-content{
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
 }
 
 .about-row{
@@ -223,9 +228,157 @@
 }
 
 .about-img{
+  width: 100%;
   border-radius: 10px;
 }
 
+
+/* CONTACTS SECTION */
+
+.home-contacts-section{
+  background:
+      linear-gradient(rgba(21, 27, 38, 0.85),
+        rgba(21, 27, 38, 0.9)),
+      url("./images/contacts-bg.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-contacts-container{
+  position: relative;
+  padding-left: 45px;
+}
+
+.home-contacts-container::before {
+  content: "";
+  position: absolute;
+  left: 4%;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #e53935;
+  border-radius: 2px;
+}
+
+.contacts-header{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #f0f4f8;
+
+  margin-bottom: 30px;
+}
+
+.contacts-pre-header{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #f0f4f8;
+
+  margin-bottom: 20px;
+}
+
+.contacts-text{
+  font-weight: 400;
+  font-size: 18x;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #f0f4f8;
+
+  margin-bottom: 35px;
+}
+
+.form-container{
+  border: 2px solid #dd2b2b;
+  border-radius: 13px;
+  box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.25);
+  background: #212a3c;
+  padding: 40px 30px 10px 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+.input-field-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:15px;
+}
+.input-wrapper{
+  position: relative;
+}
+
+.input-icon{
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+
+.contact-input{
+  padding: 14px 5px 14px 45px;
+  width: 100%;
+  background: #d9d9d9;
+  border: 1.50px solid #dd2b2b;
+  border-radius: 5px;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-input:hover {
+  border-color: #00a8ff;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-input:focus-within {
+  border: 2px solid #f7b30a;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.1);
+
+  transform: scale(1.005);
+
+  outline: none;
+}
+
+/* 2. Анімація для іконки при фокусі на інпуті */
+.input-wrapper:focus-within .input-icon {
+  color: #00a8ff;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+.input-field-button{
+  margin: 30px 0;
+  align-self: center;
+
+  border-radius: 15px;
+  padding: 14px 14px;
+  width: 50%;
+  box-shadow: 4px 3px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #dd2b2b;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+
+  transition: transform 0.2s ease;
+}
+
+.input-field-text{
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #b3b9c4;
+}
 
 @media (min-width: 768px) {
 

@@ -76,7 +76,6 @@ function Home() {
         </section>
       <section className="home-contacts-section">
         <div className="home-container home-contacts-container">
-          <div className="contacts-line"></div>
           <div className="contacs-content">
             <h2 className="contacts-header">Contacts</h2>
             <h3 className="contacts-pre-header">Ready to plan your next premium flight?</h3>
@@ -86,22 +85,17 @@ function Home() {
             </p>
             <div className="form-container">
               <div className="input-field-container">
-                <div className="input-group">
-                  <label htmlFor="name">Full name</label>
                   <div className="input-wrapper">
-                    <span className="icon">👤</span>
+                    <span className="input-icon">👤</span>
                     <input 
                       type="text" 
                       id="name" 
-                      placeholder="Enter your name" 
+                      placeholder="Full name" 
                       className="contact-input"
                     />
                   </div>
-                </div>
-                <div className="input-group">
-                  <label htmlFor="name">Email</label>
                   <div className="input-wrapper">
-                    <span className="icon"></span>
+                    <span className="input-icon"></span>
                     <input 
                       type="email" 
                       id="email" 
@@ -109,11 +103,8 @@ function Home() {
                       className="contact-input"
                     />
                   </div>
-                </div>
-                <div className="input-group">
-                  <label htmlFor="phone">Phone number</label>
                   <div className="input-wrapper">
-                    <span className="icon">📞</span>
+                    <span className="input-icon">📞</span>
                     <input 
                       type="tel" 
                       id="phone" 
@@ -121,20 +112,16 @@ function Home() {
                       className="contact-input"
                     />
                   </div>
-                <div className="input-group">
-                  <label htmlFor="time">Preferred time for call</label>
                   <div className="input-wrapper">
-                    <span className="icon">⏰</span>
+                    <span className="input-icon">⏰</span>
                     <select id="time" className="contact-input select-input">
                       <option value="morning">Morning (09:00 - 12:00)</option>
                       <option value="afternoon">Afternoon (12:00 - 15:00)</option>
                       <option value="evening">Evening (15:00 - 18:00)</option>
                     </select>
-                    </div>
-                    <button className="input-field-button">Request a Callback</button>
                   </div>
                 </div>
-              </div>
+              <button className="input-field-button">Request a Callback</button>
               <p className="input-field-text">Travel Lux — elevating your journey to new heights.</p>
             </div>
           </div>
