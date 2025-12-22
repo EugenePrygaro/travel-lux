@@ -1,7 +1,7 @@
 {
   "name": "ta-root",
   "version": "1.0.0",
-  "description": "Root project for TA client and server.",
+  "description": "Root project for Travel Lux client and server.",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start --prefix client\"",
     "server": "nodemon server/index.js",
@@ -25,6 +25,7 @@
     "sequelize": "^6.37.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.0",
     "vite-plugin-svgr": "^4.5.0"
   }
