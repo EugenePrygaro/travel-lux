@@ -1,5 +1,5 @@
 .home-container {
-  padding: 0 50px;
+  padding: 0 25px;
   font-family: var(--font-family);
 }
 
@@ -327,12 +327,13 @@
 }
 
 .contact-input{
-  padding: 16px 5px 16px 55px;
+  padding: 14px 5px 14px 55px;
   width: 100%;
   background: #d9d9d9;
   border: 1.5px solid #dd2b2b;
   border-radius: 5px;
 
+  font-size: 14px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -366,7 +367,7 @@
   background: #dd2b2b;
 
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 145%;
   letter-spacing: -0.01em;
   text-align: center;
@@ -470,7 +471,7 @@
   }
 
   .input-field-button{
-    width: 280px;
+    width: 240px;
     font-size: 18px;
   }
   .input-field-text{

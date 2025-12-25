@@ -129,7 +129,7 @@ function Home() {
                     </select>
                   </div>
                 </div>
-              <button className="input-field-button">Request a Callback</button>
+              <button className="input-field-button">Send request</button>
               <p className="input-field-text">Travel Lux — elevating your journey to new heights.</p>
             </div>
           </div>
