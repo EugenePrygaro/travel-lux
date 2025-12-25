@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/travel-lux/static/css/main.c244c1c9.css",
+    "main.css": "/travel-lux/static/css/main.1feaf1f0.css",
     "main.js": "/travel-lux/static/js/main.21022b9b.js",
     "static/media/auth_back.png": "/travel-lux/static/media/auth_back.2f739acf999b8dde08f6.png",
     "static/media/odesa.png": "/travel-lux/static/media/odesa.925da6e948bbc71cd27e.png",
@@ -16,11 +16,11 @@
     "static/media/close-icon.svg": "/travel-lux/static/media/close-icon.0cd56b0751385231d122ee0fac7b6728.svg",
     "index.html": "/travel-lux/index.html",
     "static/media/burger-icon.svg": "/travel-lux/static/media/burger-icon.0a1c73b31da9247c3d57e78adf0b3ae7.svg",
-    "main.c244c1c9.css.map": "/travel-lux/static/css/main.c244c1c9.css.map",
+    "main.1feaf1f0.css.map": "/travel-lux/static/css/main.1feaf1f0.css.map",
     "main.21022b9b.js.map": "/travel-lux/static/js/main.21022b9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c244c1c9.css",
+    "static/css/main.1feaf1f0.css",
     "static/js/main.21022b9b.js"
   ]
 }
