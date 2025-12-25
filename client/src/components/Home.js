@@ -86,7 +86,9 @@ function Home() {
             <div className="form-container">
               <div className="input-field-container">
                   <div className="input-wrapper">
-                    <span className="input-icon">👤</span>
+                    <svg className="input-icon" width="24" height="24">
+                      <use href={`${home_icons}#icon-name-input`}></use>
+                    </svg>
                     <input 
                       type="text" 
                       id="name" 
@@ -95,7 +97,9 @@ function Home() {
                     />
                   </div>
                   <div className="input-wrapper">
-                    <span className="input-icon"></span>
+                    <svg className="input-icon" width="24" height="24">
+                      <use href={`${home_icons}#icon-mail-input`}></use>
+                    </svg>
                     <input 
                       type="email" 
                       id="email" 
@@ -104,7 +108,9 @@ function Home() {
                     />
                   </div>
                   <div className="input-wrapper">
-                    <span className="input-icon">📞</span>
+                    <svg className="input-icon" width="22" height="22">
+                      <use href={`${home_icons}#icon-phone-input`}></use>
+                    </svg>
                     <input 
                       type="tel" 
                       id="phone" 
@@ -113,7 +119,9 @@ function Home() {
                     />
                   </div>
                   <div className="input-wrapper">
-                    <span className="input-icon">⏰</span>
+                    <svg className="input-icon" width="22" height="22">
+                      <use href={`${home_icons}#icon-clock-input`}></use>
+                    </svg>
                     <select id="time" className="contact-input select-input">
                       <option value="morning">Morning (09:00 - 12:00)</option>
                       <option value="afternoon">Afternoon (12:00 - 15:00)</option>
