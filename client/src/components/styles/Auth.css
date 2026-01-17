@@ -1,90 +1,151 @@
-
-
 .auth-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url("../styles/images/auth_back.png"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../styles/images/auth_back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--font-family);
 }
-.auth-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1; 
-    margin-top: 6rem; 
-}
+
 .auth-container {
-    width: 360px;
-    height: 451px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin-top: 100px;
-    font-family: 'Montserrat Alternates', sans-serif;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.233); /* Прозорість */
+  backdrop-filter: blur(15px); /* Розмиття заднього фону */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
 }
 
 /* Заголовок */
 .auth-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #d01b1b;
-    margin-bottom: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #d01b1b;
 }
 
 /* Підзаголовок */
 .auth-subtitle {
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 30px;
-    font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.input-wrapper {
+  width: 100%;
+  position: relative;
+}
+.auth-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  z-index: 100;
+  transform: translateY(-50%);
+
+  pointer-events: none;
+  fill: #23262a;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Поля вводу */
 .auth-input {
-    width: 85%;
-    height: 40px;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    padding: 10px 15px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    background-color: #f1f1f1;
-    text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 18px;
+
+  background-color: #f1f1f1;
+
+  padding: 16px 12px 16px 55px;
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  font-size: 16px;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-input:hover,
+.auth-input:focus {
+  border-color: #991d1d;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.auth-input:focus-within {
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.1);
+  outline: none;
+}
+.input-wrapper:focus-within .auth-icon,
+.input-wrapper:hover .auth-icon,
+.input-wrapper:focus .auth-icon {
+  fill: #991d1d;
+  transform: translateY(-14px);
 }
 
 /* Кнопка входу */
 .auth-button {
-    width: 85%;
-    height: 55px;
-    background-color: #ef4444;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+  width: 85%;
+  height: 55px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  margin-top: 10px;
+
+  transition: background 0.3s;
 }
 
 .auth-button:hover {
-    background-color: #c53030;
+  background-color: #c53030;
 }
 
-/* посилання на регістрацію */
+.register-link {
+  display: flex;
+  flex-direction: column;
+}
+
 .auth-register {
-    font-size: 16px;
-    color: red;
-    margin-top: 15px;
-    cursor: pointer;
+  font-size: 16px;
+  color: black;
+  margin-top: 45px;
+}
+
+.auth-register-link {
+  color: #ef4444;
+  cursor: pointer;
+
+  transition: color 250ms ease-in;
+}
+
+.auth-register-link:hover,
+.auth-register-link:focus {
+  color: #c53030;
 }
